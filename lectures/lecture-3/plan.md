@@ -3,3 +3,8 @@
 ## Homework:
 
 - перенесення JS логіки на реакт
+
+## Repository with example
+
+https://github.com/s-yakymuk/react-hooks-training
+
