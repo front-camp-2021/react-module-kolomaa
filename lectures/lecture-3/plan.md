@@ -3,7 +3,6 @@
 ## Homework:
 
 - перенесення JS логіки на реакт
-<<<<<<< HEAD
 =======
 
 ## Repository with example
@@ -16,4 +15,3 @@ https://github.com/s-yakymuk/react-hooks-training
 2. Не модифікувати існуючий стейт!
 3. Як можна менше стейту
 4. Не підіймайте стейт в батьківські компоненти без потреби
->>>>>>> upstream/main
