@@ -1,0 +1,25 @@
+.breadcrumbs__list {
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumbs__list li+li::before {
+    padding: 20px;
+    color: black;
+    content: "";
+    background-image: url(img/chevrons-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs__item {
+    display: inline;
+}
+
+.breadcrumbs__link {
+    color: #7E72F2;
+}
+
+.breadcrumbs__link--active {
+    color: #2C2C2C;
+}

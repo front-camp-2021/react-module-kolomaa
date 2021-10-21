@@ -1,3 +1,5 @@
+import './Breadcrumbs.css';
+
 function Breadcrumbs() {
     return (
         <nav className="breadcrumbs">
