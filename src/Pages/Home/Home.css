@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 320px;
+    color: #2c2c2c;
+    background-color: #f9f9f9;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+a {
+    color: #7e72f2;
+    text-decoration: none;
+}
+
+.category {
+    width: 100%;
+    margin-top: 44px;
+}
+
+.category__row {
+    display: flex;
+    margin: 0 -15px;
+
+}
+
+.filter,
+.category__products {
+    padding: 0 15px;
+    flex: 1 0;
+}
+
+.filter {
+    flex: 0 0 30%;
+    max-width: 560px;
+}
+
+/* Media Query */
+@media screen and (max-width: 1200px) {
+    .category__row {
+        flex-direction: column;
+    }
+
+    .filter {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filter__body,
+    .filter__clearButton {
+        display: none;
+    }
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+}

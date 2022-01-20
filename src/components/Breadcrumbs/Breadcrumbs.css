@@ -1,25 +1,38 @@
-.breadcrumbs__list {
+.breadcrumbs {
+    display: flex;
+    align-items: center;
     list-style: none;
-    padding: 0;
-}
-
-.breadcrumbs__list li+li::before {
-    padding: 20px;
-    color: black;
-    content: "";
-    background-image: url(img/chevrons-right.svg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .breadcrumbs__item {
-    display: inline;
+    position: relative;
+    padding-right: 26px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 }
 
-.breadcrumbs__link {
-    color: #7E72F2;
+.breadcrumbs__item:not(:first-child) {
+    padding-left: 14px;
 }
 
-.breadcrumbs__link--active {
-    color: #2C2C2C;
+.breadcrumbs__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 14px;
+    height: 8px;
+    background: url("") no-repeat 50% 50%;
+    background-size: cover;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.breadcrumbs__home {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("") no-repeat 50% 50%;
+    background-size: cover;
 }
